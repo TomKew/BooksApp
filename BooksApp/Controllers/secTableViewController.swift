@@ -56,7 +56,7 @@ class secTableViewController: UITableViewController {
         cell.indexPath = indexPath
         if let url = thumbnailURL {
             cell.bookThumbnail.sd_imageIndicator = SDWebImageActivityIndicator.gray
-            cell.bookThumbnail.sd_setImage(with: url, placeholderImage: UIImage(named: "white"))
+            cell.bookThumbnail.sd_setImage(with: url, placeholderImage: UIImage(named: "blank"))
         }
         cell.bookTitle.text = bookModelArray[indexPath.row].title
         cell.bookAuthor.text = bookModelArray[indexPath.row].author

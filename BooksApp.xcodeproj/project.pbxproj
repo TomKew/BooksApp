@@ -66,6 +66,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A4A22B2244C322500BE6A49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5C49E24415273002008AD /* BooksApp.xcdatamodeld */,
+				33BD571D2441673A00599E30 /* Model.swift */,
+				3356DF0F2447F03D00DF9442 /* modelManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A4A22B3244C325200BE6A49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				33BD571F244226C900599E30 /* Cell.swift */,
+				33704B5C244366D7009D63C7 /* favCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3A4A22B6244C32B700BE6A49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33BD571B244163B100599E30 /* networkManager.swift */,
+				3AC5C49524415273002008AD /* AppDelegate.swift */,
+				3AC5C49724415273002008AD /* SceneDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A4A22B7244C348900BE6A49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A22B3244C325200BE6A49 /* Cells */,
+				33BD57192441636200599E30 /* secTableViewController.swift */,
+				3AC5C49924415273002008AD /* detailViewController.swift */,
+				3AC5C4CB244157C4002008AD /* mainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3AC5C48924415273002008AD = {
 			isa = PBXGroup;
 			children = (
@@ -87,17 +127,9 @@
 		3AC5C49424415273002008AD /* BooksApp */ = {
 			isa = PBXGroup;
 			children = (
-				3AC5C49E24415273002008AD /* BooksApp.xcdatamodeld */,
-				33BD571D2441673A00599E30 /* Model.swift */,
-				3356DF0F2447F03D00DF9442 /* modelManager.swift */,
-				33BD571F244226C900599E30 /* Cell.swift */,
-				33704B5C244366D7009D63C7 /* favCell.swift */,
-				33BD57192441636200599E30 /* secTableViewController.swift */,
-				3AC5C49924415273002008AD /* detailViewController.swift */,
-				3AC5C4CB244157C4002008AD /* mainTableViewController.swift */,
-				33BD571B244163B100599E30 /* networkManager.swift */,
-				3AC5C49524415273002008AD /* AppDelegate.swift */,
-				3AC5C49724415273002008AD /* SceneDelegate.swift */,
+				3A4A22B2244C322500BE6A49 /* Model */,
+				3A4A22B7244C348900BE6A49 /* Controllers */,
+				3A4A22B6244C32B700BE6A49 /* View */,
 				3AC5C49B24415273002008AD /* Main.storyboard */,
 				3AC5C4A12441527F002008AD /* Assets.xcassets */,
 				3AC5C4A32441527F002008AD /* LaunchScreen.storyboard */,
@@ -396,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BooksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BooksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
